@@ -37,7 +37,7 @@ const Task:React.FC<Props> = ({title, status, id})=>{
 
     return(
         <>
-            <li className="list-group-item d-flex justify-content-between">
+            <li className="list-group-item d-flex justify-content-between mb-3 align-items-center px-3 border-dark border-2">
                 <input className="form-check-label" type="checkbox"onChange={changeStatus} defaultChecked={status}/>
                 {title} 
                 <button className="btn btn-danger" onClick={deleteTask}>Delete</button>

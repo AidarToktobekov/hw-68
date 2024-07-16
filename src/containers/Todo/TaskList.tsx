@@ -58,11 +58,11 @@ const TaskList = () => {
   return (
     <>
         {preloader}
-        <div className="container">
-            <h1 className="text-center mt-5 mb-3">Todo</h1>
+        <div className="container border-2 mt-5 border border-dark">
+            <h1 className="text-center mt-2 pb-3">Todo</h1>
             <form onSubmit={addTask}>
-                <div className="mb-3 d-flex gap-4">
-                    <input type="text" onChange={changeInput} className="form-control" value={inputValue} placeholder="Add new task"/>
+                <div className="py-4 mb-3 d-flex gap-4">
+                    <input type="text" onChange={changeInput} className="form-control border-dark" value={inputValue} placeholder="Add new task"/>
                     <button className="btn btn-primary" type="submit">add</button>
                 </div>
             </form>
